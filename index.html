@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Только для тебя</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="aurora"></div>
+<canvas id="snow"></canvas>
+<main class="screen active" id="s1"><div class="wrap">
+  <div class="tree"><img src="tree.png" alt="" onload="this.parentNode.classList.add('has-img')">
+    <svg viewBox="0 0 120 150" aria-hidden="true"><rect x="53" y="124" width="14" height="20" rx="2" fill="#6b4a2f"/>
+      <polygon points="60,18 98,66 22,66" fill="#1f6b4a"/><polygon points="60,42 106,96 14,96" fill="#25805a"/><polygon points="60,66 112,128 8,128" fill="#2b966a"/>
+      <polygon points="60,2 64,12 75,12 66,18 70,29 60,22 50,29 54,18 45,12 56,12" fill="#f2c879"/>
+      <circle cx="50" cy="56" r="3.5" fill="#ff8a7a"/><circle cx="72" cy="82" r="3.5" fill="#f2c879"/><circle cx="40" cy="108" r="4" fill="#5fd4c4"/><circle cx="82" cy="112" r="4" fill="#ff8a7a"/><circle cx="60" cy="96" r="3.5" fill="#fff"/></svg></div>
+  <h1>Это письмо запечатано льдом</h1>
+  <p>Оно написано для одного человека. Растопить лёд может только тот, кто знает слово.</p>
+  <div class="field" id="field"><input id="pass" type="text" maxlength="24" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+  <button id="go">Растопить лёд</button>
+  <div class="msg" id="msg"></div>
+</div></main>
+<main class="screen" id="s2"><div class="wrap">
+  <h2>Ира, это тебе.</h2>
+  <p class="type" id="intro"></p>
+  <div class="window later" id="win">
+    <div id="details">
+      <div class="big">13.11 · 19:00</div>
+      <p>Ночная прогулка по городу.</p>
+      <p>Одевайся тепло. Всё остальное — сюрприз.</p>
+    </div>
+    <canvas id="frost"></canvas>
+  </div>
+  <div class="later" id="after">
+    <div id="count"></div>
+    <button id="yes">Я приду</button>
+    <p id="reply" style="margin-top:20px"></p>
+  </div>
+</div></main>
+<script src="script.js"></script>
+</body>
+</html>
