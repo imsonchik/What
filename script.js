@@ -2,7 +2,7 @@ const CONFIG={
   password:"QHEX",
   hints:["Это не слово из словаря.","Четыре буквы. Я называл их тебе лично.","Спроси у меня, я подскажу."],
   intro:"Кто-то решил украсть у зимы один вечер. Только ты можешь узнать, какой. Сотри иней пальцем — и всё станет ясно.",
-  date:{month:11,day:13,hour:19,min:0},
+  date:{month:11,day:13,hour:20,min:0},
   snow:{images:["snow1.png","snow2.png","snow3.png"],count:70,size:[16,46],speed:[35,140],spin:[0.3,2.2]}
 };
 const $=s=>document.querySelector(s),rnd=(a,b)=>a+Math.random()*(b-a);
